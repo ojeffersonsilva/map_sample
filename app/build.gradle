@@ -48,4 +48,10 @@ dependencies {
 
     // Set this dependency if you want to use Hamcrest matching
     testImplementation 'org.hamcrest:hamcrest-library:1.3'
+
+    //App Center
+    def appCenterSdkVersion = '2.0.0'
+    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+
 }
