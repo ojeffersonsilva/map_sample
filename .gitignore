@@ -7,11 +7,20 @@ com_crashlytics_export_strings.xml
 # Local configuration file (sdk path, etc)
 local.properties
 
-# Gradle generated files
-.gradle/
+### Gradle ###
+.gradle
+/build/
 
 # Signing files
 .signing/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Package Files #
+*.jar
+*.war
+*.ear
 
 # User-specific configurations
 .idea/libraries/
@@ -35,3 +44,6 @@ local.properties
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Cache of project
+.gradletasknamecache
