@@ -1,4 +1,7 @@
 package com.example.mapsample
 
-class EmailValidator {
+object EmailValidator {
+
+    fun isValidEmail(email: String) = email.contains("@", false)
+
 }
