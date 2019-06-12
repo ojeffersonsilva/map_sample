@@ -2,6 +2,7 @@ package com.example.mapsample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -40,4 +41,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
     }
+
+    fun clickOnMap() {
+        Toast.makeText(this, "Test!", Toast.LENGTH_SHORT)
+    }
+
+    fun sumInt(firstNum: Int, secondNum: Int) = firstNum + secondNum
 }
